@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #4b5563;
+  --accent-color: #8b5cf6;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-[var(--primary-color)] text-white rounded-lg hover:opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-[var(--secondary-color)] text-white rounded-lg hover:opacity-90;
+  }
+}
